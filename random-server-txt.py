@@ -24,8 +24,8 @@ class RandomNumberHandler(BaseHTTPRequestHandler):
         used_numbers = self.get_used_numbers()
         
         # Define the range for our random numbers
-        MIN_NUM = 1
-        MAX_NUM = 1000
+        MIN_NUM = 100
+        MAX_NUM = 100000
         
         # If we've used all possible numbers in our range
         if len(used_numbers) >= (MAX_NUM - MIN_NUM + 1):
